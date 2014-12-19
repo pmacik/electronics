@@ -1,0 +1,20 @@
+eeschema (2013-07-07 BZR 4022)-stable  >> Creation date: 10.11.2014 19:33:53
+#Cmp ( order = Reference )
+| K1         CONN_3      
+| K2         CONN_3      
+| P1         CONN_5      
+| P2         CONN_8      
+| P3         CONN_5      
+| U1         74HC595     
+#End Cmp
+
+#Cmp (dle hodnoty)
+| CONN_3       K1        
+| CONN_3       K2        
+| CONN_5       P1        
+| CONN_5       P3        
+| CONN_8       P2        
+| 74HC595      U1        
+#Konec Cmp
+
+#Konec seznamu

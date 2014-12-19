@@ -1,0 +1,20 @@
+eeschema (2013-june-11)-stable  >> Creation date: Po 10. listopad 2014, 11:25:53 CET
+#Cmp ( order = Reference )
+| K1         CONN_3      
+| K2         CONN_3      
+| K3         CONN_3      
+| K4         CONN_3      
+| P1         CONN_8      
+| U1         74HC595     
+#End Cmp
+
+#Cmp (dle hodnoty)
+| CONN_3       K1        
+| CONN_3       K2        
+| CONN_3       K3        
+| CONN_3       K4        
+| CONN_8       P1        
+| 74HC595      U1        
+#Konec Cmp
+
+#Konec seznamu

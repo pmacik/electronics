@@ -1,0 +1,28 @@
+eeschema (2013-june-11)-stable  >> Creation date: Pá 19. prosinec 2014, 07:27:53 CET
+#Cmp ( order = Reference )
+| D1         LED         
+| D2         LED         
+| D3         LED         
+| D4         LED         
+| MOD1       DS1307-MODULE
+| R1         R           
+| R2         R           
+| R3         R           
+| R4         R           
+| U1         ARDUINO_MINI
+#End Cmp
+
+#Cmp (dle hodnoty)
+| LED          D1        
+| LED          D2        
+| LED          D3        
+| LED          D4        
+| DS1307-MODULE MOD1      
+| R            R1        
+| R            R2        
+| R            R3        
+| R            R4        
+| ARDUINO_MINI U1        
+#Konec Cmp
+
+#Konec seznamu
