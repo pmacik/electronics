@@ -1,0 +1,36 @@
+eeschema (2013-07-07 BZR 4022)-stable  >> Creation date: 17.1.2015 22:58:02
+#Cmp ( order = Reference )
+| C1         100nF       
+| C2         100nF       
+| D1         LED         
+| D2         LED         
+| P1         Cubieboard  
+| P2         Servo       
+| P3         Bell        
+| R1         R           
+| R2         R           
+| R3         1M          
+| R4         1M          
+| SW1        Emergency open
+| SW2        Bell Test   
+| U1         ARDUINO_MINI
+#End Cmp
+
+#Cmp (dle hodnoty)
+| 100nF        C1        
+| 100nF        C2        
+| LED          D1        
+| LED          D2        
+| Cubieboard   P1        
+| Servo        P2        
+| Bell         P3        
+| 1M           R3        
+| 1M           R4        
+| R            R1        
+| R            R2        
+| Emergency open SW1       
+| Bell Test    SW2       
+| ARDUINO_MINI U1        
+#Konec Cmp
+
+#Konec seznamu

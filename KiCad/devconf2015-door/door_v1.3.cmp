@@ -1,0 +1,136 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 22.1.2015 18:00:41
+
+BeginCmp
+TimeStamp = /54BACCDE;
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BACC5A;
+Reference = C2;
+ValeurCmp = 100nF;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BE2EFC;
+Reference = C3;
+ValeurCmp = 100nF;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BADB34;
+Reference = D1;
+ValeurCmp = RED_LED;
+IdModule  = LED_3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BADB1C;
+Reference = D2;
+ValeurCmp = GREEN_LED;
+IdModule  = LED_3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BAD38B;
+Reference = P1;
+ValeurCmp = Cubieboard;
+IdModule  = PIN_ARRAY_4x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BACB1F;
+Reference = P2;
+ValeurCmp = Servo;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BAD681;
+Reference = P3;
+ValeurCmp = Bell;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BE2F11;
+Reference = P4;
+ValeurCmp = Door Open;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54C12C1C;
+Reference = P5;
+ValeurCmp = Servo PWR Jmpr;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54C12653;
+Reference = P6;
+ValeurCmp = Servo Ext PWR;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BADA86;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BADA79;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BACCD8;
+Reference = R3;
+ValeurCmp = 1M;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BACC3E;
+Reference = R4;
+ValeurCmp = 1M;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BE2EF6;
+Reference = R5;
+ValeurCmp = 1M;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BACB9F;
+Reference = SW1;
+ValeurCmp = Emergency open;
+IdModule  = SW_PUSH_SMALL;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BACBCC;
+Reference = SW2;
+ValeurCmp = Bell Test;
+IdModule  = SW_PUSH_SMALL;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BACB0C;
+Reference = U1;
+ValeurCmp = ARDUINO_MINI;
+IdModule  = arduino_mini;
+EndCmp
+
+EndListe
