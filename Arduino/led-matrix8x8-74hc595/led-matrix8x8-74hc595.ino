@@ -1,5 +1,5 @@
 // LED matrix 8x8 with 74HC595 register
-// Version 1.0
+// Version 1.3
 //
 // Developed for Arduino Nano (rev. 3)
 //
