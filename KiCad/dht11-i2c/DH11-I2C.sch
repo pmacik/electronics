@@ -1,0 +1,278 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:dht11
+LIBS:arduino
+LIBS:simple-parts
+LIBS:DH11-I2C-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DHT11 U2
+U 1 1 5639FC79
+P 4750 2500
+F 0 "U2" H 4700 2850 60  0000 C CNN
+F 1 "DHT11" H 4700 2750 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04" H 4750 2500 60  0001 C CNN
+F 3 "" H 4750 2500 60  0000 C CNN
+	1    4750 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L arduino_mini U1
+U 1 1 5639FCCD
+P 3050 2800
+F 0 "U1" H 3550 1850 70  0000 C CNN
+F 1 "arduino_mini" H 3800 1750 70  0000 C CNN
+F 2 "Libraries:arduino_nano" H 3050 2750 60  0000 C CNN
+F 3 "" H 3050 2800 60  0000 C CNN
+	1    3050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5639FD78
+P 4500 2700
+F 0 "#PWR01" H 4500 2450 50  0001 C CNN
+F 1 "GND" H 4500 2550 50  0000 C CNN
+F 2 "" H 4500 2700 60  0000 C CNN
+F 3 "" H 4500 2700 60  0000 C CNN
+	1    4500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5639FDA2
+P 3050 4450
+F 0 "#PWR02" H 3050 4200 50  0001 C CNN
+F 1 "GND" H 3050 4300 50  0000 C CNN
+F 2 "" H 3050 4450 60  0000 C CNN
+F 3 "" H 3050 4450 60  0000 C CNN
+	1    3050 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P1
+U 1 1 5639FDE0
+P 1550 3150
+F 0 "P1" H 1550 3400 50  0000 C CNN
+F 1 "CONN_01X04" V 1650 3150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04" H 1550 3150 60  0001 C CNN
+F 3 "" H 1550 3150 60  0000 C CNN
+	1    1550 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5639FE97
+P 1750 3400
+F 0 "#PWR03" H 1750 3150 50  0001 C CNN
+F 1 "GND" H 1750 3250 50  0000 C CNN
+F 2 "" H 1750 3400 60  0000 C CNN
+F 3 "" H 1750 3400 60  0000 C CNN
+	1    1750 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 5639FEBE
+P 1750 2550
+F 0 "#PWR04" H 1750 2400 50  0001 C CNN
+F 1 "+5V" H 1750 2690 50  0000 C CNN
+F 2 "" H 1750 2550 60  0000 C CNN
+F 3 "" H 1750 2550 60  0000 C CNN
+	1    1750 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR05
+U 1 1 5639FF4B
+P 4500 2200
+F 0 "#PWR05" H 4500 2050 50  0001 C CNN
+F 1 "+5V" H 4500 2340 50  0000 C CNN
+F 2 "" H 4500 2200 60  0000 C CNN
+F 3 "" H 4500 2200 60  0000 C CNN
+	1    4500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR06
+U 1 1 5639FF62
+P 3050 1550
+F 0 "#PWR06" H 3050 1400 50  0001 C CNN
+F 1 "+5V" H 3050 1690 50  0000 C CNN
+F 2 "" H 3050 1550 60  0000 C CNN
+F 3 "" H 3050 1550 60  0000 C CNN
+	1    3050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 563A00F3
+P 4000 2150
+F 0 "R1" V 4080 2150 50  0000 C CNN
+F 1 "4k7" V 4000 2150 50  0000 C CNN
+F 2 "Discret:R3-LARGE_PADS" V 3930 2150 30  0001 C CNN
+F 3 "" H 4000 2150 30  0000 C CNN
+	1    4000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR07
+U 1 1 563A017A
+P 4000 1900
+F 0 "#PWR07" H 4000 1750 50  0001 C CNN
+F 1 "+5V" H 4000 2040 50  0000 C CNN
+F 2 "" H 4000 1900 60  0000 C CNN
+F 3 "" H 4000 1900 60  0000 C CNN
+	1    4000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4350 3050 4450
+Wire Wire Line
+	3150 4350 3150 4400
+Wire Wire Line
+	3150 4400 3050 4400
+Connection ~ 3050 4400
+Wire Wire Line
+	1750 3300 1750 3400
+Wire Wire Line
+	1750 2550 1750 3000
+Wire Wire Line
+	4500 2700 4500 2600
+Wire Wire Line
+	4500 2200 4500 2300
+Wire Wire Line
+	4000 2750 3750 2750
+Wire Wire Line
+	4000 2300 4000 2750
+Wire Wire Line
+	4000 2400 4500 2400
+Wire Wire Line
+	4000 1900 4000 2000
+Connection ~ 4000 2400
+Wire Wire Line
+	2350 3100 1750 3100
+Wire Wire Line
+	1750 3200 2250 3200
+Wire Wire Line
+	2250 3200 2250 3000
+Wire Wire Line
+	2250 3000 2350 3000
+Wire Wire Line
+	3050 1550 3050 1650
+$Comp
+L R R2
+U 1 1 563A0628
+P 1950 2850
+F 0 "R2" V 2030 2850 50  0000 C CNN
+F 1 "10k" V 1950 2850 50  0000 C CNN
+F 2 "Discret:R3-LARGE_PADS" V 1880 2850 30  0001 C CNN
+F 3 "" H 1950 2850 30  0000 C CNN
+	1    1950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 563A065A
+P 2100 2850
+F 0 "R3" V 2180 2850 50  0000 C CNN
+F 1 "10k" V 2100 2850 50  0000 C CNN
+F 2 "Discret:R3-LARGE_PADS" V 2030 2850 30  0001 C CNN
+F 3 "" H 2100 2850 30  0000 C CNN
+	1    2100 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2700 2100 2600
+Wire Wire Line
+	2100 2600 1750 2600
+Connection ~ 1750 2600
+Wire Wire Line
+	1950 2700 1950 2600
+Connection ~ 1950 2600
+Wire Wire Line
+	1950 3000 1950 3100
+Connection ~ 1950 3100
+Wire Wire Line
+	2100 3000 2100 3200
+Connection ~ 2100 3200
+$Comp
+L C C1
+U 1 1 563A0525
+P 5450 2450
+F 0 "C1" H 5475 2550 50  0000 L CNN
+F 1 "100n" H 5475 2350 50  0000 L CNN
+F 2 "Discret:C2" H 5488 2300 30  0001 C CNN
+F 3 "" H 5450 2450 60  0000 C CNN
+	1    5450 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR08
+U 1 1 563A0647
+P 5450 2200
+F 0 "#PWR08" H 5450 2050 50  0001 C CNN
+F 1 "+5V" H 5450 2340 50  0000 C CNN
+F 2 "" H 5450 2200 60  0000 C CNN
+F 3 "" H 5450 2200 60  0000 C CNN
+	1    5450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 563A0662
+P 5450 2700
+F 0 "#PWR09" H 5450 2450 50  0001 C CNN
+F 1 "GND" H 5450 2550 50  0000 C CNN
+F 2 "" H 5450 2700 60  0000 C CNN
+F 3 "" H 5450 2700 60  0000 C CNN
+	1    5450 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2200 5450 2300
+Wire Wire Line
+	5450 2600 5450 2700
+$EndSCHEMATC
