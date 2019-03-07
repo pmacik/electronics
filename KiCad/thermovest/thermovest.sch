@@ -1,0 +1,435 @@
+EESchema Schematic File Version 4
+LIBS:thermovest-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5C7CF177
+P 4350 2900
+F 0 "A1" H 4350 1814 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 4350 1723 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 4500 1950 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 4350 1900 50  0001 C CNN
+	1    4350 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2700 4850 2700
+$Comp
+L power:GND #PWR02
+U 1 1 5C7CFC9D
+P 4350 4150
+F 0 "#PWR02" H 4350 3900 50  0001 C CNN
+F 1 "GND" H 4355 3977 50  0000 C CNN
+F 2 "" H 4350 4150 50  0001 C CNN
+F 3 "" H 4350 4150 50  0001 C CNN
+	1    4350 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4150 4350 4000
+Wire Wire Line
+	4450 3900 4450 3950
+Wire Wire Line
+	4450 3950 4350 3950
+Connection ~ 4350 3950
+Wire Wire Line
+	4350 3950 4350 3900
+$Comp
+L Device:R_POT_TRIM RV1
+U 1 1 5C7CFF5A
+P 5250 3300
+F 0 "RV1" H 5180 3254 50  0000 R CNN
+F 1 "Requested Temp (4k7)" H 5180 3345 50  0000 R CNN
+F 2 "sewer:Trimr" H 5250 3300 50  0001 C CNN
+F 3 "~" H 5250 3300 50  0001 C CNN
+	1    5250 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV2
+U 1 1 5C7D01D6
+P 5550 3200
+F 0 "RV2" H 5481 3154 50  0000 R CNN
+F 1 "Min Temp (1k)" H 5481 3245 50  0000 R CNN
+F 2 "sewer:Trimr" H 5550 3200 50  0001 C CNN
+F 3 "~" H 5550 3200 50  0001 C CNN
+	1    5550 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV3
+U 1 1 5C7D0210
+P 5850 3100
+F 0 "RV3" H 5781 3054 50  0000 R CNN
+F 1 "Max Temp (1k)" H 5781 3145 50  0000 R CNN
+F 2 "sewer:Trimr" H 5850 3100 50  0001 C CNN
+F 3 "~" H 5850 3100 50  0001 C CNN
+	1    5850 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5C7D0305
+P 5250 2700
+F 0 "R4" H 5180 2654 50  0000 R CNN
+F 1 "220R" H 5180 2745 50  0000 R CNN
+F 2 "sewer:R4_LARGE_PADS" V 5180 2700 50  0001 C CNN
+F 3 "~" H 5250 2700 50  0001 C CNN
+	1    5250 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5C7D03A1
+P 5550 2700
+F 0 "R6" H 5480 2654 50  0000 R CNN
+F 1 "220R" H 5480 2745 50  0000 R CNN
+F 2 "sewer:R4_LARGE_PADS" V 5480 2700 50  0001 C CNN
+F 3 "~" H 5550 2700 50  0001 C CNN
+	1    5550 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5C7D03D3
+P 5850 2700
+F 0 "R8" H 5780 2654 50  0000 R CNN
+F 1 "220R" H 5780 2745 50  0000 R CNN
+F 2 "sewer:R4_LARGE_PADS" V 5780 2700 50  0001 C CNN
+F 3 "~" H 5850 2700 50  0001 C CNN
+	1    5850 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5250 3150 5250 3100
+Wire Wire Line
+	5850 2950 5850 2900
+Wire Wire Line
+	5550 3050 5550 3000
+$Comp
+L Device:R R5
+U 1 1 5C7D087B
+P 5250 3700
+F 0 "R5" H 5320 3746 50  0000 L CNN
+F 1 "220R" H 5320 3655 50  0000 L CNN
+F 2 "sewer:R4_LARGE_PADS" V 5180 3700 50  0001 C CNN
+F 3 "~" H 5250 3700 50  0001 C CNN
+	1    5250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5C7D08B9
+P 5550 3700
+F 0 "R7" H 5620 3746 50  0000 L CNN
+F 1 "220R" H 5620 3655 50  0000 L CNN
+F 2 "sewer:R4_LARGE_PADS" V 5480 3700 50  0001 C CNN
+F 3 "~" H 5550 3700 50  0001 C CNN
+	1    5550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5C7D08E3
+P 5850 3700
+F 0 "R9" H 5920 3746 50  0000 L CNN
+F 1 "220R" H 5920 3655 50  0000 L CNN
+F 2 "sewer:R4_LARGE_PADS" V 5780 3700 50  0001 C CNN
+F 3 "~" H 5850 3700 50  0001 C CNN
+	1    5850 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3450 5250 3500
+Wire Wire Line
+	5550 3350 5550 3400
+Wire Wire Line
+	5850 3250 5850 3300
+Wire Wire Line
+	4850 2900 5850 2900
+Connection ~ 5850 2900
+Wire Wire Line
+	5850 2900 5850 2850
+Wire Wire Line
+	4850 3000 5550 3000
+Connection ~ 5550 3000
+Wire Wire Line
+	5550 3000 5550 2850
+Wire Wire Line
+	4850 3100 5250 3100
+Connection ~ 5250 3100
+Wire Wire Line
+	5250 3100 5250 2850
+Wire Wire Line
+	5100 3300 5100 3500
+Wire Wire Line
+	5100 3500 5250 3500
+Connection ~ 5250 3500
+Wire Wire Line
+	5250 3500 5250 3550
+Wire Wire Line
+	5400 3200 5400 3400
+Wire Wire Line
+	5400 3400 5550 3400
+Connection ~ 5550 3400
+Wire Wire Line
+	5550 3400 5550 3550
+Wire Wire Line
+	5700 3100 5700 3300
+Wire Wire Line
+	5700 3300 5850 3300
+Connection ~ 5850 3300
+Wire Wire Line
+	5850 3300 5850 3550
+Wire Wire Line
+	5850 3850 5850 4000
+Wire Wire Line
+	5850 4000 5550 4000
+Connection ~ 4350 4000
+Wire Wire Line
+	4350 4000 4350 3950
+Wire Wire Line
+	5550 3850 5550 4000
+Connection ~ 5550 4000
+Wire Wire Line
+	5550 4000 5250 4000
+Wire Wire Line
+	5250 3850 5250 4000
+Connection ~ 5250 4000
+Wire Wire Line
+	5250 4000 4350 4000
+$Comp
+L Device:R R3
+U 1 1 5C7D1E3A
+P 3600 2950
+F 0 "R3" H 3530 2904 50  0000 R CNN
+F 1 "1k" H 3530 2995 50  0000 R CNN
+F 2 "sewer:R4_LARGE_PADS" V 3530 2950 50  0001 C CNN
+F 3 "~" H 3600 2950 50  0001 C CNN
+	1    3600 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5C7D1F20
+P 3300 2650
+F 0 "R2" H 3230 2604 50  0000 R CNN
+F 1 "1k" H 3230 2695 50  0000 R CNN
+F 2 "sewer:R4_LARGE_PADS" V 3230 2650 50  0001 C CNN
+F 3 "~" H 3300 2650 50  0001 C CNN
+	1    3300 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5C7D1FAF
+P 3600 3650
+F 0 "D2" V 3638 3533 50  0000 R CNN
+F 1 "Max LED (red)" V 3547 3533 50  0000 R CNN
+F 2 "sewer:LED-3MM-Large-pads" H 3600 3650 50  0001 C CNN
+F 3 "~" H 3600 3650 50  0001 C CNN
+	1    3600 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5C7D20DD
+P 3300 3450
+F 0 "D1" V 3338 3332 50  0000 R CNN
+F 1 "Min Led (blue)" V 3247 3332 50  0000 R CNN
+F 2 "sewer:LED-3MM-Large-pads" H 3300 3450 50  0001 C CNN
+F 3 "~" H 3300 3450 50  0001 C CNN
+	1    3300 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 3100 3600 3500
+Wire Wire Line
+	3300 2800 3300 3300
+Wire Wire Line
+	3300 3600 3300 4000
+Wire Wire Line
+	3300 4000 3600 4000
+Wire Wire Line
+	3600 3800 3600 4000
+Connection ~ 3600 4000
+Wire Wire Line
+	3600 4000 4350 4000
+$Comp
+L Connector:USB_A J2
+U 1 1 5C7D47D9
+P 1900 2750
+F 0 "J2" H 1955 3217 50  0000 C CNN
+F 1 "Thermo Out" H 1955 3126 50  0000 C CNN
+F 2 "sewer:USB-A" H 2050 2700 50  0001 C CNN
+F 3 " ~" H 2050 2700 50  0001 C CNN
+	1    1900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q1
+U 1 1 5C7D4CDC
+P 2850 3000
+F 0 "Q1" V 3193 3000 50  0000 C CNN
+F 1 "Q_NMOS_GDS" V 3102 3000 50  0000 C CNN
+F 2 "sewer:TO220-123" H 3050 3100 50  0001 C CNN
+F 3 "~" H 2850 3000 50  0001 C CNN
+	1    2850 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 3200 2850 3200
+$Comp
+L Device:R R1
+U 1 1 5C7D8DBB
+P 2850 3650
+F 0 "R1" H 2780 3604 50  0000 R CNN
+F 1 "1k" H 2780 3695 50  0000 R CNN
+F 2 "sewer:R4_LARGE_PADS" V 2780 3650 50  0001 C CNN
+F 3 "~" H 2850 3650 50  0001 C CNN
+	1    2850 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 3500 2850 3200
+Connection ~ 2850 3200
+Wire Wire Line
+	2850 3800 2850 4000
+Wire Wire Line
+	2850 4000 3050 4000
+Connection ~ 3300 4000
+Wire Wire Line
+	3050 2900 3050 4000
+Connection ~ 3050 4000
+Wire Wire Line
+	3050 4000 3300 4000
+$Comp
+L Connector:USB_B_Mini J1
+U 1 1 5C7DAD5F
+P 1900 1500
+F 0 "J1" H 1955 1967 50  0000 C CNN
+F 1 "Power In" H 1955 1876 50  0000 C CNN
+F 2 "sewer:USB-mini" H 2050 1450 50  0001 C CNN
+F 3 "~" H 2050 1450 50  0001 C CNN
+	1    1900 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1900 1850 1900
+Wire Wire Line
+	2200 1300 2450 1300
+Wire Wire Line
+	4250 1300 4250 1900
+$Comp
+L power:GND #PWR01
+U 1 1 5C7DC53B
+P 1850 1950
+F 0 "#PWR01" H 1850 1700 50  0001 C CNN
+F 1 "GND" H 1855 1777 50  0000 C CNN
+F 2 "" H 1850 1950 50  0001 C CNN
+F 3 "" H 1850 1950 50  0001 C CNN
+	1    1850 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1950 1850 1900
+Connection ~ 1850 1900
+Wire Wire Line
+	1850 1900 1900 1900
+Wire Wire Line
+	1900 3150 2650 3150
+Wire Wire Line
+	2650 3150 2650 2900
+Wire Wire Line
+	2200 2550 2450 2550
+Wire Wire Line
+	2450 2550 2450 1300
+Connection ~ 2450 1300
+Wire Wire Line
+	2450 1300 4250 1300
+Wire Wire Line
+	1950 1050 1950 1100
+Wire Wire Line
+	5850 2550 5850 2400
+Wire Wire Line
+	5850 2400 5550 2400
+Wire Wire Line
+	4950 2400 4950 2700
+Wire Wire Line
+	5250 2550 5250 2400
+Connection ~ 5250 2400
+Wire Wire Line
+	5250 2400 4950 2400
+Wire Wire Line
+	5550 2550 5550 2400
+Connection ~ 5550 2400
+Wire Wire Line
+	5550 2400 5250 2400
+Wire Wire Line
+	4550 1700 4550 1900
+$Comp
+L power:GND #PWR03
+U 1 1 5C7E907C
+P 5550 1950
+F 0 "#PWR03" H 5550 1700 50  0001 C CNN
+F 1 "GND" H 5555 1777 50  0000 C CNN
+F 2 "" H 5550 1950 50  0001 C CNN
+F 3 "" H 5550 1950 50  0001 C CNN
+	1    5550 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 5C7E93DA
+P 5900 1800
+F 0 "J3" H 5873 1680 50  0000 R CNN
+F 1 "DS1820" H 5873 1771 50  0000 R CNN
+F 2 "sewer:PINHEAD1-4-90" H 5900 1800 50  0001 C CNN
+F 3 "~" H 5900 1800 50  0001 C CNN
+	1    5900 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5550 1950 5550 1700
+Wire Wire Line
+	5550 1700 5700 1700
+Wire Wire Line
+	4950 1700 4550 1700
+Wire Wire Line
+	3750 2500 3300 2500
+Wire Wire Line
+	3850 2500 3800 2500
+Wire Wire Line
+	3800 2500 3800 1800
+Wire Wire Line
+	3600 2700 3850 2700
+Wire Wire Line
+	3600 2700 3600 2800
+Wire Wire Line
+	3750 2500 3750 2600
+Wire Wire Line
+	3750 2600 3850 2600
+Wire Wire Line
+	5700 1800 4950 1800
+Wire Wire Line
+	4950 1800 4950 1700
+Wire Wire Line
+	5700 1900 4700 1900
+Wire Wire Line
+	4700 1900 4700 1800
+Wire Wire Line
+	4700 1800 3800 1800
+$EndSCHEMATC
